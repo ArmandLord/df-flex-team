@@ -83,7 +83,35 @@ img {
 }
 
 .container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 10%;
     width: 100%;
     border-top: #FFF;
+}
+
+hr{
+    width: 80%;
+}
+
+.container-logout{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+
+.boton{
+    border-radius: 12px;
+    background: #FF4242;
+    width: 141px;
+    height: 47px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
