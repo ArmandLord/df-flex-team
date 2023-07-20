@@ -28,11 +28,7 @@
   margin-left: 30px;
 }
 
-.container2 {
-  height: 100vh;
-  width: 70vw;
-  background-color: red;
-}
+
 
 .container-perfil {
   display: flex;
@@ -127,4 +123,39 @@ hr {
   align-items: center;
   cursor: pointer;
   border: none;
+}
+
+.container2 {
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "bio"
+  "skills";
+
+  height: 100vh;
+  width: 70vw;
+  background-color: red;
+
+  
+  
+
+}
+
+.bio {
+  grid-area: bio;
+  background-color: yellow;
+  display: grid;
+  place-items: center ;
+}
+.skills{
+  grid-area: skills;
+  background-color: aqua;
+}
+.bio__detalle{
+  width: 1027px;
+  height: 398px;
+
+  border-radius: 46px;
+  background: linear-gradient(180deg, #AFFFF5 0%, #000355 100%);
+  box-shadow: 7px 13px 10px 0px rgba(0, 0, 0, 0.25);
 }
