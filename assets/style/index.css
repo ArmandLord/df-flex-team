@@ -50,7 +50,7 @@
   align-items: center;
 }
 
-img {
+.container-perfil img {
   border-radius: 111px;
   height: 100px;
 }
@@ -136,9 +136,6 @@ hr {
   width: 70vw;
   background-color: red;
 
-  
-  
-
 }
 
 .bio {
@@ -154,8 +151,42 @@ hr {
 .bio__detalle{
   width: 1027px;
   height: 398px;
-
+  padding: 30px;
   border-radius: 46px;
   background: linear-gradient(180deg, #AFFFF5 0%, #000355 100%);
   box-shadow: 7px 13px 10px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-areas: 
+    'titulo titulo titulo titulo'
+    'detalle detalle img1 img2'
+  ;
+  gap: 25px;
+}
+
+.bio-titulo {
+  grid-area: titulo;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.detalle {
+  grid-area: detalle;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.bio-img1 {
+ grid-area: img1; 
+}
+
+.bio-img2 {
+  grid-area: img2;
 }
