@@ -28,12 +28,6 @@
   margin-left: 30px;
 }
 
-.container2 {
-  height: 100vh;
-  width: 70vw;
-  background-color: red;
-}
-
 .container-perfil {
   display: flex;
   flex-direction: row;
@@ -54,7 +48,7 @@
   align-items: center;
 }
 
-img {
+.container-perfil img {
   border-radius: 111px;
   height: 100px;
 }
@@ -127,4 +121,102 @@ hr {
   align-items: center;
   cursor: pointer;
   border: none;
+}
+
+.container2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "bio"
+    "skills";
+
+  height: 100vh;
+  width: 70vw;
+}
+
+.bio {
+  grid-area: bio;
+  display: grid;
+  place-items: center;
+}
+.skills {
+  grid-area: skills;
+}
+
+.bio__detalle {
+  width: 1027px;
+  height: 398px;
+  padding: 30px;
+  border-radius: 46px;
+  background: linear-gradient(180deg, #affff5 0%, #000355 100%);
+  box-shadow: 7px 13px 10px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-areas:
+    "titulo titulo titulo titulo"
+    "detalle detalle img1 img2";
+  gap: 25px;
+}
+
+.bio-titulo {
+  grid-area: titulo;
+  color: #fff;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.detalle {
+  grid-area: detalle;
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.bio-img1 {
+  grid-area: img1;
+}
+
+.bio-img2 {
+  grid-area: img2;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills h1 {
+  text-align: start;
+  width: 77%;
+  margin: 20px 0px 20px 40px;
+  color: #000355;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cards {
+  width: 281px;
+  height: 277px;
+  border-radius: 46px;
+  background: #f1f1f1;
+  box-shadow: 6px 12px 17px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 40px;
 }
